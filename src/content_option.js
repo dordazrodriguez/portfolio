@@ -76,7 +76,7 @@ const services = [{
 ];
 
 const dataportfolio = [{
-        img: "https://camo.githubusercontent.com/f55dc6e7b60adbd5385b01778ce33a169c2f1808b51226763d0a748a947eeead/68747470733a2f2f646f7264617a726f6472696775657a2e6769746875622e696f2f696d672f776f726b732f74762e706e67",
+        img: "https://github.com/dordazrodriguez/IPTV-and-Movie-App/raw/main/Assets/tv.png",
         name: "IPTV and Movie Application",
         description: "A multi-platform application that I developed using Google's Flutter framework for streaming on-demand Movies and TV shows. Application also includes a section for streaming live TV Channels through HLS/HTTP links loaded from .M3U8 files.",
         link: "https://github.com/dordazrodriguez/IPTV-and-Movie-App",
