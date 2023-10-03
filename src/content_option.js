@@ -13,7 +13,7 @@ const introdata = {
         third: "Naturally curious",
         fourth: "Seeking opportunities that would allow me to combine my knowledge and skills in both programming and finance.",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
+    // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
     // your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
     your_img_url: "https://www.adva.com/-/media/adva-main-site/innovation/virtualization/transforming-sd-wan/sd-wan-1.png?rev=15e3aa96072a4b01af67a71e7dd1336e",
 };
