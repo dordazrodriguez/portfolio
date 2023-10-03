@@ -91,7 +91,7 @@ const dataportfolio = [{
 const contactConfig = {
     YOUR_EMAIL: "dordazrodriguez@gmail.com",
     YOUR_FONE: "(225) 371-1811",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",
@@ -100,8 +100,9 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
+    // github: "https://github.com",
     linkedin: "https://www.linkedin.com/in/david-ordaz-rodriguez-41124713a/",
+    linktree: "https://linktr.ee/dordazrodriguez"
 };
 export {
     contactConfig, dataabout,
