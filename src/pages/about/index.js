@@ -62,8 +62,9 @@ export const About = () => {
             {skills.map((data, i) => {
               return (
                 <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
-                  <div className="progress">
+                  {/* <h3 className="progress-title">{data.name}</h3> */}
+                  <p className="progress-title">{data.name}</p>
+                  {/* <div className="progress">
                     <div
                       className="progress-bar"
                       style={{
@@ -72,10 +73,11 @@ export const About = () => {
                     >
                       <div className="progress-value">{data.value}%</div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               );
             })}
+            <p /* style={{paddingTop: "15px"}} */>Basic Knowledge in: C++, </p>
           </Col>
         </Row>
         {/* <Row className="sec_sp">

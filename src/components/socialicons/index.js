@@ -7,6 +7,7 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { socialprofils } from "../../content_option";
 import "./style.css";
 
@@ -23,10 +24,12 @@ export const Socialicons = (params) => {
         )}
         {socialprofils.portfolio && (
           <li>
-            <a href={socialprofils.portfolio}>
+            <Link to="/portfolio">
+            {/* <a href={socialprofils.portfolio}> */}
             {/* https://icon-sets.iconify.design/ */}
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="currentColor" d="M28 10h-6V6a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V12a2 2 0 0 0-2-2ZM12 6h8v4h-8ZM4 26V12h24v14Z"/></svg>
-            </a>
+            {/* </a> */}
+            </Link>
           </li>
         )
         }

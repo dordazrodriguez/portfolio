@@ -59,7 +59,8 @@ import "./style.css";
               </Navbar.Collapse>
             </Navbar>
             <Col id="programming" style={{ paddingTop: "1em" }}>
-              <h1>Projects </h1>
+              {/* <h1>Projects - {selectedCategory}</h1> */}
+              <h1>Projects</h1>
               <hr className="t_border my-4 ml-0 text-left" />
               <div className="mb-5 po_items_ho">
                 {filteredProjects.map((data, i) => (

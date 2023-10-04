@@ -45,20 +45,20 @@ const skills = [{
         value: 90,
     },
     {
-        name: "Djano",
+        name: "Java",
         value: 85,
     },
     {
-        name: "Javascript",
-        value: 80,
+        name: "Javascript, HTML, CSS",
+        value: 90,
     },
     {
         name: "React",
-        value: 60,
+        value: 80,
     },
     {
-        name: "Jquery",
-        value: 85,
+        name: "Dart / Flutter",
+        value: 90,
     },
 ];
 

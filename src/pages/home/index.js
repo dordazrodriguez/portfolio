@@ -26,16 +26,10 @@ export const Home = () => {
             <div className="align-self-center ">
               <div className="intro mx-auto">
                 <h2 className="mb-1x">{introdata.title}</h2>
-                <h1 className="fluidz-48 mb-1x">
+                <h1 className="fluidz-48 mb-1x" style={{ flex: "1", paddingRight: "10% !important", fontSize: "24px" }}>
                   <Typewriter
                     options={{
                       strings: Object.values(introdata.animated), 
-                      // [
-                      //   introdata.animated.first,
-                      //   introdata.animated.second,
-                      //   introdata.animated.third,
-                      //   introdata.animated.fourth,
-                      // ],
                       autoStart: true,
                       loop: true,
                       deleteSpeed: 20,
