@@ -8,22 +8,21 @@ import "./style.css";
 export const Home = () => {
   return (
     <HelmetProvider>
-      <section id="home" className="home" /* style={{ backgroundImage: `url(${introdata.your_img_url})`}} */>
+      <section id="home" className="home" >
         <Helmet>
           <meta charSet="utf-8" />
           <title> {meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
-        <div className="intro_sec d-block d-lg-flex align-items-center ">
-          <div
+        <div className="intro_sec d-block d-lg-flex align-items-center">
+          <div id="backgroundImage"
             className="h_bg-image order-1 order-lg-2 h-100 "
-            style={{ backgroundImage: `url(${introdata.your_img_url})` }}
-          ></div>
+            style={{ backgroundImage: `url(${introdata.your_img_url})`, backgroundSize: 'cover', backgroundPosition: 'center center', right: "0", zIndex: "1", width: "100%" }}/>
           {/* <div className="d3-component order-3 order-lg-3 h-100 d-lg-flex justify-content-center">
               <MyD3Component /> 
             </div> */}
           <div style={{padding: "30px"}}></div>
-          <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
+          <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center" style={{zIndex: "3", marginLeft: "7%"}}>
             <div className="align-self-center ">
               <div className="intro mx-auto">
                 <h2 className="mb-1x">{introdata.title}</h2>
