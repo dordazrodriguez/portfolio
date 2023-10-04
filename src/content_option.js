@@ -81,19 +81,20 @@ const dataportfolio = [{
         name: "IPTV and Movie Application",
         description: "A multi-platform application that I developed using Google's Flutter framework for streaming on-demand Movies and TV shows. Application also includes a section for streaming live TV Channels through HLS/HTTP links loaded from .M3U8 files.",
         link: "https://github.com/dordazrodriguez/IPTV-and-Movie-App",
-        category: "programming",
+        categories: ["programming"],
     },
     {
         img: "https://www.datacamp.com/datacamp.png",
         name: "Data Science - Dev Journal",
         description: "Datacamp - Data Science Professional with Python Certification",
         link: "https://colab.research.google.com/drive/18Y84Z4yJi0lUAJBw9mIc9j8DiGmwpGrV?usp=sharing",
-        category: "programming",
+        categories: ["financial", "programming"],
     },
     {
         img: "https://picsum.photos/400/800/?grayscale",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
+        categories: [],
     },
 ];
 

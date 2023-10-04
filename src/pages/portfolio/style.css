@@ -118,3 +118,11 @@
 [data-theme="dark"] #nav-toggle {
     background-color: darkgray;
 }
+
+
+.bordered-link {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-right: 15px;  
+  }

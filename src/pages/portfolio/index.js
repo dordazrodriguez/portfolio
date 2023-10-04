@@ -11,16 +11,16 @@ import "./style.css";
 //     description: "Portfolio description goes here",
 //   };
   
-//   const dataportfolio = [
+// const dataportfolio = [
 //     {
-//       category: "programming",
+//       categories: ["programming"],
 //       img: "image1.jpg",
 //       name: "Project 1",
 //       description: "Description of Project 1",
 //       link: "https://example.com/project1",
 //     },
 //     {
-//       category: "financial",
+//       categories: ["financial", "programming"],
 //       img: "image2.jpg",
 //       name: "Project 2",
 //       description: "Description of Project 2",
@@ -33,9 +33,9 @@ import "./style.css";
     const [selectedCategory, setSelectedCategory] = useState("all");
   
     const filteredProjects = dataportfolio.filter((project) => {
-      if (selectedCategory === "all") return true;
-      return project.category === selectedCategory;
-    });
+        if (selectedCategory === "all") return true; // Show all projects
+        return project.categories.includes(selectedCategory);
+      });
   
     return (
       <HelmetProvider>
@@ -52,13 +52,13 @@ import "./style.css";
               <Navbar.Toggle aria-controls="basic-navbar-nav" id="nav-toggle" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto" style={{ paddingLeft: "2em" }}>
-                  <Nav.Link href="#" onClick={() => setSelectedCategory("all")}>All Projects</Nav.Link>
-                  <Nav.Link href="#" onClick={() => setSelectedCategory("programming")}>General Programming Projects</Nav.Link>
-                  <Nav.Link href="#" onClick={() => setSelectedCategory("financial")}>Financial Projects</Nav.Link>
+                  <Nav.Link href="#" onClick={() => setSelectedCategory("all")} className="bordered-link">All Projects</Nav.Link>
+                  <Nav.Link href="#" onClick={() => setSelectedCategory("programming")} className="bordered-link">General Programming Projects</Nav.Link>
+                  <Nav.Link href="#" onClick={() => setSelectedCategory("financial")} className="bordered-link">Financial Projects</Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
-            <Col id="programming" style={{ paddingTop: "4em" }}>
+            <Col id="programming" style={{ paddingTop: "1em" }}>
               <h1>Projects </h1>
               <hr className="t_border my-4 ml-0 text-left" />
               <div className="mb-5 po_items_ho">
