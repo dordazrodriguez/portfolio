@@ -55,10 +55,11 @@ const Headermain = () => {
           </div>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
             <div className="d-flex">
+            <a href={socialprofils.linktree} target="_blank">Linktree</a>  
+            <a href={socialprofils.linkedin} target="_blank">LinkedIn</a>  
             {/* <a href={socialprofils.facebook} target="_blank">Facebook</a> */}
-            <a href={socialprofils.github} target="_blank">Github</a>
+            {/* <a href={socialprofils.github} target="_blank">Github</a> */}
             {/* <a href={socialprofils.twitter} target="_blank">Twitter</a> */}
-            <a href={socialprofils.linkedin} target="_blank">LinkedIn</a>
             </div>
             <p className="copyright m-0">copyright __ {logotext}</p>
           </div>

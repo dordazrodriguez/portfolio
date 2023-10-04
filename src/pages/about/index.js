@@ -1,14 +1,13 @@
 import React from "react";
-import "./style.css";
+import { Col, Container, Row } from "react-bootstrap";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Container, Row, Col } from "react-bootstrap";
 import {
   dataabout,
+  links,
   meta,
-  worktimeline,
-  skills,
-  services,
+  skills
 } from "../../content_option";
+import "./style.css";
 
 export const About = () => {
   return (
@@ -35,7 +34,7 @@ export const About = () => {
             </div>
           </Col>
         </Row>
-        <Row className=" sec_sp">
+        {/* <Row className=" sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Work Timline</h3>
           </Col>
@@ -54,7 +53,7 @@ export const About = () => {
               </tbody>
             </table>
           </Col>
-        </Row>
+        </Row> */}
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Skills</h3>
@@ -79,7 +78,7 @@ export const About = () => {
             })}
           </Col>
         </Row>
-        <Row className="sec_sp">
+        {/* <Row className="sec_sp">
           <Col lang="5">
             <h3 className="color_sec py-4">services</h3>
           </Col>
@@ -89,6 +88,21 @@ export const About = () => {
                 <div className="service_ py-4" key={i}>
                   <h5 className="service__title">{data.title}</h5>
                   <p className="service_desc">{data.description}</p>
+                </div>
+              );
+            })}
+          </Col>
+        </Row> */}
+        <Row className="sec_sp">
+          <Col lang="5">
+            <h3 className="color_sec py-4">Links</h3>
+          </Col>
+          <Col lg="7">
+            {links.map((data, i) => {
+              return (
+                <div className="service_ py-4" key={i}>
+                  <h5>{data.title}</h5>
+                  <a className="service_desc" href={data.url}  target="_blank">{data.url}</a>
                 </div>
               );
             })}

@@ -1,57 +1,81 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { dataportfolio, meta } from "../../content_option";
 import "./style.css";
 
-export const Portfolio = () => {
-  return (
-    <HelmetProvider>
-       {/* Header for Portfolio Page */}
-      <Container className="About-header">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title> Portfolio | {meta.title} </title>{" "}
-          <meta name="description" content={meta.description} />
-        </Helmet>
-        {/* Portfolio page content */}
-        <Row className="mb-5 mt-3 pt-md-3">
-          <Navbar id="navbar" expand="lg" style={{padding: "15px", marginBottom: "30px", fontWeight: "500"}}>
-            <Navbar.Brand id="navbar" style={{fontWeight: "bold", fontSize: "2em", }}>Portfolio</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" id="nav-toggle"/>
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto" style={{paddingLeft: "2em"}}>
-                <Nav.Link href="#programming">General Programming Projects</Nav.Link>
-                <Nav.Link href="#financial">Financial Projects</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
-          <hr className="t_border my-4 ml-0 text-left" />
-          <Col id="financial" style={{paddingTop: "4em"}}>
-            <h1 > Financial Projects </h1>
-            <hr className="t_border my-4 ml-0 text-left" />
-          </Col>
-          <div className="divider"/>
-          <Col id="programming" style={{paddingTop: "4em"}}>
-            <h1> General Programming Projects </h1>
-            <hr className="t_border my-4 ml-0 text-left" />
-            <div className="mb-5 po_items_ho">
-              {dataportfolio.map((data, i) => {
-                return (
+
+// // Sample data and meta information (replace with your actual data)
+// const meta = {
+//     title: "Your Portfolio",
+//     description: "Portfolio description goes here",
+//   };
+  
+//   const dataportfolio = [
+//     {
+//       category: "programming",
+//       img: "image1.jpg",
+//       name: "Project 1",
+//       description: "Description of Project 1",
+//       link: "https://example.com/project1",
+//     },
+//     {
+//       category: "financial",
+//       img: "image2.jpg",
+//       name: "Project 2",
+//       description: "Description of Project 2",
+//       link: "https://example.com/project2",
+//     },
+//     // Add more projects here
+//   ];
+  
+  export const Portfolio = () => {
+    const [selectedCategory, setSelectedCategory] = useState("all");
+  
+    const filteredProjects = dataportfolio.filter((project) => {
+      if (selectedCategory === "all") return true;
+      return project.category === selectedCategory;
+    });
+  
+    return (
+      <HelmetProvider>
+        <Container className="About-header">
+          <Helmet>
+            <meta charSet="utf-8" />
+            <title> Portfolio | {meta.title} </title>
+            <meta name="description" content={meta.description} />
+          </Helmet>
+  
+          <Row className="mb-5 mt-3 pt-md-3">
+            <Navbar id="navbar" expand="lg" style={{ padding: "15px", marginBottom: "30px", fontWeight: "500" }}>
+              <Navbar.Brand id="navbar" style={{ fontWeight: "bold", fontSize: "2em" }}>Portfolio</Navbar.Brand>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" id="nav-toggle" />
+              <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="mr-auto" style={{ paddingLeft: "2em" }}>
+                  <Nav.Link href="#" onClick={() => setSelectedCategory("all")}>All Projects</Nav.Link>
+                  <Nav.Link href="#" onClick={() => setSelectedCategory("programming")}>General Programming Projects</Nav.Link>
+                  <Nav.Link href="#" onClick={() => setSelectedCategory("financial")}>Financial Projects</Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
+            </Navbar>
+            <Col id="programming" style={{ paddingTop: "4em" }}>
+              <h1>Projects </h1>
+              <hr className="t_border my-4 ml-0 text-left" />
+              <div className="mb-5 po_items_ho">
+                {filteredProjects.map((data, i) => (
                   <div key={i} className="po_item">
-                    <img src={data.img} alt="" />
+                    <img src={data.img} alt="" style={{ content: "center", alignItems: "center", justifyContent: "center" }} />
                     <div className="content">
                       <h3>{data.name}</h3>
                       <p>{data.description}</p>
-                      <a href={data.link} target="_blank">view project</a>
+                      <a href={data.link} target="_blank" rel="noopener noreferrer">View Project</a>
                     </div>
                   </div>
-                );
-              })}
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </HelmetProvider>
-  );
-};
+                ))}
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </HelmetProvider>
+    );
+  };

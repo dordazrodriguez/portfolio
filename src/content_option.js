@@ -11,7 +11,7 @@ const introdata = {
         first: "I have a passion for business and programming",
         second: "I code interesting websites and applications",
         third: "Naturally curious",
-        fourth: "Seeking opportunities that would allow me to combine my knowledge and skills in both programming and finance.",
+        fourth: "Actively seeking opportunities that would allow me to combine my knowledge and skills in both programming and finance.",
     },
     // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
     // your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
@@ -22,6 +22,7 @@ const dataabout = {
     title: "abit about my self",
     aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
 };
+
 const worktimeline = [{
         jobtitle: "Designer of week",
         where: "YAdfi",
@@ -80,6 +81,14 @@ const dataportfolio = [{
         name: "IPTV and Movie Application",
         description: "A multi-platform application that I developed using Google's Flutter framework for streaming on-demand Movies and TV shows. Application also includes a section for streaming live TV Channels through HLS/HTTP links loaded from .M3U8 files.",
         link: "https://github.com/dordazrodriguez/IPTV-and-Movie-App",
+        category: "programming",
+    },
+    {
+        img: "https://www.datacamp.com/datacamp.png",
+        name: "Data Science - Dev Journal",
+        description: "Datacamp - Data Science Professional with Python Certification",
+        link: "https://colab.research.google.com/drive/18Y84Z4yJi0lUAJBw9mIc9j8DiGmwpGrV?usp=sharing",
+        category: "programming",
     },
     {
         img: "https://picsum.photos/400/800/?grayscale",
@@ -104,8 +113,26 @@ const socialprofils = {
     linkedin: "https://www.linkedin.com/in/david-ordaz-rodriguez-41124713a/",
     linktree: "https://linktr.ee/dordazrodriguez"
 };
+
+const links = [
+    {
+        title: "LinkedIn",
+        url: "https://www.linkedin.com/in/david-ordaz-rodriguez-41124713a/",
+    },
+    {
+        title: "Github 1",
+        url: "https://github.com/djhome50",
+    },
+    {
+        title: "Github 2",
+        url: "https://github.com/dordazrodriguez",
+    },
+];
+
+
+
 export {
     contactConfig, dataabout,
-    dataportfolio, introdata, logotext, meta, services, skills, socialprofils, worktimeline
+    dataportfolio, introdata, links, logotext, meta, services, skills, socialprofils, worktimeline
 };
 
