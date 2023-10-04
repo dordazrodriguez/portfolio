@@ -112,7 +112,8 @@ const contactConfig = {
 const socialprofils = {
     // github: "https://github.com",
     linkedin: "https://www.linkedin.com/in/david-ordaz-rodriguez-41124713a/",
-    linktree: "https://linktr.ee/dordazrodriguez"
+    linktree: "https://linktr.ee/dordazrodriguez",
+    portfolio: "./portfolio",
 };
 
 const links = [
