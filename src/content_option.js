@@ -1,7 +1,7 @@
 const logotext = "DAVID";
 const meta = {
     title: "David Ordaz - Rodriguez",
-    // description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    // description: "",
 };
 
 const introdata = {
@@ -20,7 +20,7 @@ const introdata = {
 
 const dataabout = {
     title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    aboutme: []
 };
 
 const worktimeline = [{
@@ -42,7 +42,7 @@ const worktimeline = [{
 
 
 const skills2 = [{
-    languages: 'Python, Java, Javascript, HTML, CSS, Dart, TypeScript',
+    languages: 'Python, Java, Javascript, HTML, CSS, Dart, TypeScript, SQL, NoSQL, Matplotlib, Pandas, Numpy',
     technologies: 'Flutter, React, Linux, Docker, SSH, API\'s, Tableau',
 }];
 
@@ -60,12 +60,20 @@ const skills = [{
         value: 90,
     },
     {
+        name: "SQL",
+        value: 90,
+    },
+    {
         name: "React",
         value: 80,
     },
     {
         name: "Dart / Flutter",
         value: 90,
+    },
+    {
+        name: "Docker",
+        value: 80,
     },
 ];
 
@@ -89,7 +97,7 @@ const dataportfolio = [{
         description: "A multi-platform application that I developed using Google's Flutter framework for streaming on-demand Movies and TV shows. Application also includes a section for streaming live TV Channels through HLS/HTTP links loaded from .M3U8 files.",
         link: "https://github.com/dordazrodriguez/IPTV-and-Movie-App",
         categories: ["programming"],
-        tags: ['Flutter', 'Dart'],
+        tags: ['Flutter', 'Dart', 'SQL', 'NoSQL'],
     },
     {
         img: '/project_images/WGU-JavaFoundations.gif',
