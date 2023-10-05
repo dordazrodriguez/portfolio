@@ -3,31 +3,6 @@ import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { dataportfolio, meta } from "../../content_option";
 import "./style.css";
-
-
-// // Sample data and meta information (replace with your actual data)
-// const meta = {
-//     title: "Your Portfolio",
-//     description: "Portfolio description goes here",
-//   };
-  
-// const dataportfolio = [
-//     {
-//       categories: ["programming"],
-//       img: "image1.jpg",
-//       name: "Project 1",
-//       description: "Description of Project 1",
-//       link: "https://example.com/project1",
-//     },
-//     {
-//       categories: ["financial", "programming"],
-//       img: "image2.jpg",
-//       name: "Project 2",
-//       description: "Description of Project 2",
-//       link: "https://example.com/project2",
-//     },
-//     // Add more projects here
-//   ];
   
 
   export const Portfolio = () => {

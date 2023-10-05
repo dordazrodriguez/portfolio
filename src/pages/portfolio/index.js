@@ -4,31 +4,6 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { dataportfolio, meta } from "../../content_option";
 import "./style.css";
 
-// const meta = {
-//   title: "Your Portfolio",
-//   description: "Portfolio description goes here",
-// };
-
-// const dataportfolio = [
-//   {
-//     categories: ["programming"],
-//     img: "image1.jpg",
-//     name: "Project 1",
-//     description: "Description of Project 1",
-//     tags: ["react", "javascript", "web"],
-//     link: "https://example.com/project1",
-//   },
-//   {
-//     categories: ["financial", "programming"],
-//     img: "image2.jpg",
-//     name: "Project 2",
-//     description: "Description of Project 2",
-//     tags: ["finance", "javascript", "web"],
-//     link: "https://example.com/project2",
-//   },
-//   // Add more projects here
-// ];
-
 class Helpers {
   static contains(orig, filter) {
     let res = filter.map((item) => {

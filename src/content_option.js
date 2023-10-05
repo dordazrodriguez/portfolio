@@ -1,3 +1,12 @@
+function imgdir() {
+    if (process.env.REACT_APP !== undefined) {
+      return process.env.REACT_APP;
+    } else {
+      return '';
+    }
+  }
+
+
 const logotext = "DAVID";
 const meta = {
     title: "David Ordaz - Rodriguez",
@@ -100,7 +109,7 @@ const dataportfolio = [{
         tags: ['Flutter', 'Dart', 'SQL', 'NoSQL'],
     },
     {
-        img: '/project_images/WGU-JavaFoundations.gif',
+        img: imgdir() + 'project_images/WGU-JavaFoundations.gif',
         name: "WGU Java Web App",
         description: "Web app made for WGU Computer Shop made with Java and Spring Boot.",
         link: "https://gitlab.com/wgu-gitlab-environment/student-repos/dordazr1/d287-java-frameworks/-/tree/main1?ref_type=heads",
@@ -116,7 +125,7 @@ const dataportfolio = [{
         tags: ['Python', 'Data Science'],
     },
     {
-        img: '/project_images/portfolio_project.gif',
+        img: imgdir() +  'project_images/portfolio_project.gif',
         name: "Portfolio",
         description: "Created this developer portfolio using React.",
         link: "https://github.com/dordazrodriguez/portfolio",
