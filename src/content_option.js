@@ -1,3 +1,5 @@
+import WGUProjectImage from "./assets/project_images/WGU-JavaFoundations.gif"
+
 const logotext = "DAVID";
 const meta = {
     title: "David Ordaz - Rodriguez",
@@ -82,6 +84,7 @@ const dataportfolio = [{
         description: "A multi-platform application that I developed using Google's Flutter framework for streaming on-demand Movies and TV shows. Application also includes a section for streaming live TV Channels through HLS/HTTP links loaded from .M3U8 files.",
         link: "https://github.com/dordazrodriguez/IPTV-and-Movie-App",
         categories: ["programming"],
+        tags: [],
     },
     {
         img: "https://www.datacamp.com/datacamp.png",
@@ -89,12 +92,22 @@ const dataportfolio = [{
         description: "Datacamp - Data Science Professional with Python Certification",
         link: "https://colab.research.google.com/drive/18Y84Z4yJi0lUAJBw9mIc9j8DiGmwpGrV?usp=sharing",
         categories: ["financial", "programming"],
+        tags: ['Python', 'Data Science'],
+    },
+    {
+        img: WGUProjectImage,
+        name: "WGU Java Web App",
+        description: "Web app made for WGU Computer Shop made with Java and Spring Boot.",
+        link: "https://gitlab.com/wgu-gitlab-environment/student-repos/dordazr1/d287-java-frameworks/-/tree/main1?ref_type=heads",
+        categories: ["programming"],
+        tags: ["Java", "Spring Boot"],
     },
     {
         img: "https://picsum.photos/400/800/?grayscale",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
         categories: [],
+        tags: [],
     },
 ];
 

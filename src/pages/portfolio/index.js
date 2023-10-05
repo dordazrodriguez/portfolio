@@ -29,6 +29,7 @@ import "./style.css";
 //     // Add more projects here
 //   ];
   
+
   export const Portfolio = () => {
     const [selectedCategory, setSelectedCategory] = useState("all");
   
@@ -58,18 +59,27 @@ import "./style.css";
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
-            <Col id="programming" style={{ paddingTop: "1em" }}>
+            <Col style={{ marginRight: "1em", marginLeft: "1em" }}>
               {/* <h1>Projects - {selectedCategory}</h1> */}
-              <h1>Projects</h1>
+              <h1>Projects {filteredProjects.length}</h1>
               <hr className="t_border my-4 ml-0 text-left" />
               <div className="mb-5 po_items_ho">
                 {filteredProjects.map((data, i) => (
                   <div key={i} className="po_item">
-                    <img src={data.img} alt="" style={{ content: "center", alignItems: "center", justifyContent: "center" }} />
+                    <img src={data.img} alt="" style={{verticalAlign: 'middle'}}/>
                     <div className="content">
-                      <h3>{data.name}</h3>
+                      <h3 style={{ fontWeight: "bold" }}>{data.name}</h3>
                       <p>{data.description}</p>
-                      <a href={data.link} target="_blank" rel="noopener noreferrer">View Project</a>
+                      {data.tags.length > 0 && (
+                          <div className="tags">
+                            {data.tags.map((tag, j) => (
+                              <span key={j} className="tag">
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+                        )}
+                      <a href={data.link} target="_blank" rel="noopener noreferrer" style={{marginTop: "15px", marginBottom: "15px"}}>View Project</a>
                     </div>
                   </div>
                 ))}

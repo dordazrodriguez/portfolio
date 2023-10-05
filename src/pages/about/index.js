@@ -77,7 +77,7 @@ export const About = () => {
                 </div>
               );
             })}
-            <p /* style={{paddingTop: "15px"}} */>Basic Knowledge in: C++, </p>
+            <p /* style={{paddingTop: "15px"}} */>Knowledge of: C++, </p>
           </Col>
         </Row>
         {/* <Row className="sec_sp">
