@@ -189,4 +189,7 @@ Tag Styling
     border-width: 1px;
     border-radius: 5px;
 }
-  
+
+.tag-input {
+    background-color: var(--bg-color);
+}
