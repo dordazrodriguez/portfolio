@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8589ccb1.css",
-    "main.js": "/portfolio/static/js/main.0fe23ec1.js",
-    "index.html": "/portfolio/index.html"
+    "main.css": "https://dordazrodriguez.github.io/portfolio/static/css/main.8589ccb1.css",
+    "main.js": "https://dordazrodriguez.github.io/portfolio/static/js/main.dbe45c42.js",
+    "index.html": "https://dordazrodriguez.github.io/portfolio/index.html"
   },
   "entrypoints": [
     "static/css/main.8589ccb1.css",
-    "static/js/main.0fe23ec1.js"
+    "static/js/main.dbe45c42.js"
   ]
 }
