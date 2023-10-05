@@ -1,5 +1,3 @@
-import WGUProjectImage from "./assets/project_images/WGU-JavaFoundations.gif"
-
 const logotext = "DAVID";
 const meta = {
     title: "David Ordaz - Rodriguez",
@@ -41,6 +39,13 @@ const worktimeline = [{
         date: "2019",
     },
 ];
+
+
+const skills2 = [{
+    languages: 'Python, Java, Javascript, HTML, CSS, Dart, TypeScript',
+    technologies: 'Flutter, React, Linux, Docker, SSH, API\'s, Tableau',
+}];
+
 
 const skills = [{
         name: "Python",
@@ -156,6 +161,6 @@ const links = [
 
 export {
     contactConfig, dataabout,
-    dataportfolio, introdata, links, logotext, meta, services, skills, socialprofils, worktimeline
+    dataportfolio, introdata, links, logotext, meta, services, skills, socialprofils, worktimeline, skills2
 };
 

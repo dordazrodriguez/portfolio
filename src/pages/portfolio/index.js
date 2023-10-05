@@ -59,11 +59,11 @@ import "./style.css";
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
-            <Col style={{ marginRight: "1em", marginLeft: "1em" }}>
+            <Col style={{ marginRight: "0.5em", marginLeft: "0.5em" }}>
               {/* <h1>Projects - {selectedCategory}</h1> */}
-              <h1>Projects {filteredProjects.length}</h1>
+              <h1 style={{paddingTop: "25px"}}>Projects {filteredProjects.length}</h1>
               <hr className="t_border my-4 ml-0 text-left" />
-              <div className="mb-5 po_items_ho">
+              <div className="mb-5 po_items_ho" style={{paddingTop: "10px"}}>
                 {filteredProjects.map((data, i) => (
                   <div key={i} className="po_item">
                     <img src={data.img} alt="" style={{verticalAlign: 'middle'}}/>
