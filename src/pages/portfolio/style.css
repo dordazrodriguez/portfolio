@@ -165,9 +165,10 @@
     padding-left: 10px;
     display: inline-block;
     /* padding: 5px 10px; */
-    margin-right: 5px;
+    margin: 5px;
     /* border: 1px solid #000;  */
     border-radius: 4px;
     color: aqua;
     background-color: gray;
+    /* background-color: var(--bg-color); */
 }
