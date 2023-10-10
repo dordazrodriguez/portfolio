@@ -1,8 +1,8 @@
 function imgdir() {
-    if (process.env.REACT_APP !== undefined) {
+    if (process.env.REACT_APP != null) {
       return process.env.REACT_APP;
     } else {
-      return '/';
+      return 'portfolio/';
     }
   }
 

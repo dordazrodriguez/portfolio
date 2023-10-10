@@ -9,7 +9,7 @@
     --overlay-color: rgb(255 255 255 / 70%);
 }
 
-[data-theme="light"] {
+[data-theme="dark"] {
     --bg-color: #0c0c0c;
     --primary-color: #0d0d0d;
     --secondary-color: #fff;
