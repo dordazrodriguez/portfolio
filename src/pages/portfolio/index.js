@@ -87,7 +87,7 @@ export const Portfolio = () => {
                 <div key={i} className="po_item">
                   <img src={data.img} alt="" style={{ verticalAlign: "middle" }} />
                   <div className="content">
-                    <h3 style={{ fontWeight: "800", paddingBottom: "0.4em" }}>{data.name}</h3>
+                    <h3 style={{ fontWeight: "800",  paddingTop: "2em"}}>{data.name}</h3>
                     <p>{data.description}</p>
                     {data.tags.length > 0 && (
                       <div className="tags">

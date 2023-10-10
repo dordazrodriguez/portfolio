@@ -56,6 +56,13 @@ const skills2 = [{
 }];
 
 
+const quotes = [{
+    quote: '',
+    author: '',
+},
+];
+
+
 const skills = [{
         name: "Python",
         value: 90,
@@ -100,13 +107,15 @@ const services = [{
     },
 ];
 
-const dataportfolio = [{
-        img: "https://github.com/dordazrodriguez/IPTV-and-Movie-App/raw/main/Assets/tv.png",
-        name: "IPTV and Movie Application",
-        description: "A multi-platform application that I developed using Google's Flutter framework for streaming on-demand Movies and TV shows. Application also includes a section for streaming live TV Channels through HLS/HTTP links loaded from .M3U8 files.",
-        link: "https://github.com/dordazrodriguez/IPTV-and-Movie-App",
-        categories: ["programming"],
-        tags: ['Flutter', 'Dart', 'SQL', 'NoSQL'],
+const dataportfolio = [
+    {
+        img: imgdir() + 'project_images/flight_prediction_ML.gif',
+        name: "India Flight Prediction using Machine Learning",
+        // description: "The aim of ths project is to extract meaningful insights from airline data and make predictions about the future of airlines base on factors such as source, destinations, arrival times, departure times, journey dates, and number of stops. Ultimately, this project seeks to predict the fare or ticket price of flights on specific days based on these factors.",
+        description: "This project seeks to predict the price of flights on specific days based on factors such as source, destinations, arrival times, departure times, journey dates, and number of stops.",
+        link: "",
+        categories: ["programming", "financial", "Data_Science"],
+        tags: ["Python", "Data Science", "Analytics"],
     },
     {
         img: imgdir() + 'project_images/WGU-JavaFoundations.gif',
@@ -121,8 +130,8 @@ const dataportfolio = [{
         name: "Data Science - Dev Journal",
         description: "Datacamp - Data Science Professional with Python Certification",
         link: "https://colab.research.google.com/drive/18Y84Z4yJi0lUAJBw9mIc9j8DiGmwpGrV?usp=sharing",
-        categories: ["financial", "programming"],
-        tags: ['Python', 'Data Science'],
+        categories: ["financial", "programming", "Data_Science"],
+        tags: ['Python', 'Data Science', 'Analytics'],
     },
     {
         img: imgdir() +  'project_images/portfolio_project.gif',
@@ -133,8 +142,16 @@ const dataportfolio = [{
         tags: ["React", "Bootstrap", 'JavaScript', 'HTML', 'CSS'],
     },
     {
+        img: "https://github.com/dordazrodriguez/IPTV-and-Movie-App/raw/main/Assets/tv.png",
+        name: "IPTV and Movie Application",
+        description: "A multi-platform application that I developed using Google's Flutter framework for streaming on-demand Movies and TV shows. Application also includes a section for streaming live TV Channels through HLS/HTTP links loaded from .M3U8 files.",
+        link: "https://github.com/dordazrodriguez/IPTV-and-Movie-App",
+        categories: ["programming"],
+        tags: ['Flutter', 'Dart', 'SQL', 'NoSQL'],
+    },
+    {
         img: "https://picsum.photos/400/800/?grayscale",
-        description: "More projects still left to add...",
+        description: "More projects left to add...",
         link: null,
         categories: [],
         tags: [],
