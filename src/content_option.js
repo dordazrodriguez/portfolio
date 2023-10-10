@@ -145,7 +145,7 @@ const dataportfolio = [
     {
         img: "https://github.com/dordazrodriguez/IPTV-and-Movie-App/raw/main/Assets/tv.png",
         name: "IPTV and Movie Application",
-        description: "A multi-platform application that I developed using Google's Flutter framework for streaming on-demand Movies and TV shows. Application also includes a section for streaming live TV Channels through HLS/HTTP links loaded from .M3U8 files.",
+        description: "A multi-platform application that I developed using Google's Flutter framework for streaming on-demand Movies and TV shows from links available on the internet. App also includes a section for streaming live TV Channels through HLS/HTTP links loaded from .M3U8 files.",
         link: "https://github.com/dordazrodriguez/IPTV-and-Movie-App",
         categories: ["programming"],
         tags: ['Flutter', 'Dart', 'SQL', 'NoSQL'],
