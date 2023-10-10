@@ -70,8 +70,8 @@ export const Portfolio = () => {
                 <Nav.Link href="#" onClick={() => setSelectedCategory("programming")} className="bordered-link">
                   General Programming Projects
                 </Nav.Link>
-                <Nav.Link href="#" onClick={() => setSelectedCategory("financial")} className="bordered-link">
-                  Financial Projects
+                <Nav.Link href="#" onClick={() => setSelectedCategory("Data_Science")} className="bordered-link">
+                  Data Science
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
