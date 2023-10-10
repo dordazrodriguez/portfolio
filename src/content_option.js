@@ -3,7 +3,7 @@ function imgdir() {
       return process.env.REACT_APP_NAME;
     } 
     else {
-      return '/';
+      return '';
     }
 }
 
