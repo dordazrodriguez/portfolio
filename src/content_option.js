@@ -1,8 +1,9 @@
 function imgdir() {
-    if (process.env.REACT_APP !== undefined) {
-      return process.env.REACT_APP;
-    } else {
-      return '';
+    if (process.env.REACT_APP_NAME) {
+      return process.env.REACT_APP_NAME;
+    } 
+    else {
+      return '/';
     }
 }
 
@@ -110,12 +111,12 @@ const services = [{
 const dataportfolio = [
     {
         img: imgdir() + 'project_images/flight_prediction_ML.gif',
-        name: "India Flight Prediction using Machine Learning",
+        name: "Flight Price Prediction using Machine Learning",
         // description: "The aim of ths project is to extract meaningful insights from airline data and make predictions about the future of airlines base on factors such as source, destinations, arrival times, departure times, journey dates, and number of stops. Ultimately, this project seeks to predict the fare or ticket price of flights on specific days based on these factors.",
-        description: "This project seeks to predict the price of flights on specific days based on factors such as source, destinations, arrival times, departure times, journey dates, and number of stops.",
+        description: "This project seeks to predict the price of flights on a given day based on factors such as flight sources, destinations, arrival times, departure times, journey dates, and number of stops.",
         link: "",
         categories: ["programming", "financial", "Data_Science"],
-        tags: ["Python", "Data Science", "Analytics"],
+        tags: ["Python", "Data Science", "Analytics", "Seaborn"],
     },
     {
         img: imgdir() + 'project_images/WGU-JavaFoundations.gif',
