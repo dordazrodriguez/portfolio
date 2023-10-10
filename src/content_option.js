@@ -1,10 +1,10 @@
 function imgdir() {
-    if (process.env.REACT_APP != null) {
+    if (process.env.REACT_APP) {
       return process.env.REACT_APP;
     } else {
       return 'portfolio/';
     }
-  }
+}
 
 
 const logotext = "DAVID";
