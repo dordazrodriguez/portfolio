@@ -98,6 +98,7 @@ export const Portfolio = () => {
                         ))}
                       </div>
                     )}
+                    {data.year ? <p>({data.year})</p> : <p></p>}
                     <a href={data.link} target="_blank" rel="noopener noreferrer" style={{ marginTop: "15px", marginBottom: "15px" }}>
                       View Project
                     </a>

@@ -1,10 +1,18 @@
+const isLocal = false
+const project_base = 'portfolio/'
+
 function imgdir() {
-    if (process.env.REACT_APP_NAME) {
-      return process.env.REACT_APP_NAME;
-    } 
-    else {
-      return '';
+    if (isLocal) {
+        return project_base;
+    } else {
+        return '';
     }
+    // if (process.env.REACT_APP_NAME) {
+    //   return process.env.REACT_APP_NAME;
+    // } 
+    // else {
+    //   return '';
+    // }
 }
 
 
@@ -115,6 +123,7 @@ const dataportfolio = [
         // description: "The aim of ths project is to extract meaningful insights from airline data and make predictions about the future of airlines base on factors such as source, destinations, arrival times, departure times, journey dates, and number of stops. Ultimately, this project seeks to predict the fare or ticket price of flights on specific days based on these factors.",
         description: "This project seeks to predict the price of flights on a given day based on factors such as flight sources, destinations, arrival times, departure times, journey dates, and number of stops.",
         link: "https://colab.research.google.com/drive/1tpmXADD_4HdJf7w9oq9_cX5C19871uLD?usp=sharing",
+        year: '',
         categories: ["programming", "financial", "Data_Science"],
         tags: ["Python", "Data Science", "Analytics", "Seaborn"],
     },
@@ -123,6 +132,7 @@ const dataportfolio = [
         name: "WGU Java Web App",
         description: "Web app made for WGU Computer Shop made with Java and Spring Boot.",
         link: "https://gitlab.com/wgu-gitlab-environment/student-repos/dordazr1/d287-java-frameworks/-/tree/main1?ref_type=heads",
+        year: '',
         categories: ["programming"],
         tags: ["Java", "Spring Boot"],
     },
@@ -131,6 +141,7 @@ const dataportfolio = [
         name: "Data Science - Dev Journal",
         description: "Datacamp - Data Science Professional with Python Certification",
         link: "https://colab.research.google.com/drive/18Y84Z4yJi0lUAJBw9mIc9j8DiGmwpGrV?usp=sharing",
+        year: '',
         categories: ["financial", "programming", "Data_Science"],
         tags: ['Python', 'Data Science', 'Analytics'],
     },
@@ -139,6 +150,7 @@ const dataportfolio = [
         name: "Portfolio",
         description: "Created this developer portfolio using React.",
         link: "https://github.com/dordazrodriguez/portfolio",
+        year: '',
         categories: ["programming"],
         tags: ["React", "Bootstrap", 'JavaScript', 'HTML', 'CSS'],
     },
@@ -147,6 +159,7 @@ const dataportfolio = [
         name: "IPTV and Movie Application",
         description: "A multi-platform application that I developed using Google's Flutter framework for streaming on-demand Movies and TV shows from links available on the internet. App also includes a section for streaming live TV Channels through HLS/HTTP links loaded from .M3U8 files.",
         link: "https://github.com/dordazrodriguez/IPTV-and-Movie-App",
+        year: '2018',
         categories: ["programming"],
         tags: ['Flutter', 'Dart', 'SQL', 'NoSQL'],
     },
@@ -154,6 +167,7 @@ const dataportfolio = [
         img: "https://picsum.photos/400/800/?grayscale",
         description: "More projects left to add...",
         link: null,
+        year: '',
         categories: [],
         tags: [],
     },
