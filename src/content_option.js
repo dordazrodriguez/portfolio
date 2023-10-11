@@ -1,4 +1,4 @@
-const isLocal = false
+const isLocal = true
 const project_base = 'portfolio/'
 
 function imgdir() {
