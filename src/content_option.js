@@ -119,7 +119,7 @@ const services = [{
 const dataportfolio = [
     {
         img: imgdir() + 'project_images/flight_prediction_ML.gif',
-        name: "Flight Price Prediction using Machine Learning",
+        name: "Airline Flights Price Prediction using Machine Learning",
         // description: "The aim of ths project is to extract meaningful insights from airline data and make predictions about the future of airlines base on factors such as source, destinations, arrival times, departure times, journey dates, and number of stops. Ultimately, this project seeks to predict the fare or ticket price of flights on specific days based on these factors.",
         description: "This project seeks to predict the price of flights on a given day based on factors such as flight sources, destinations, arrival times, departure times, journey dates, and number of stops.",
         link: "https://colab.research.google.com/drive/1tpmXADD_4HdJf7w9oq9_cX5C19871uLD?usp=sharing",

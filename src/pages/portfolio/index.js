@@ -85,7 +85,7 @@ export const Portfolio = () => {
             <div className="mb-5 po_items_ho" style={{ paddingTop: "10px" }}>
               {filteredProjects.map((data, i) => (
                 <div key={i} className="po_item">
-                  <img src={data.img} alt="" style={{ verticalAlign: "middle", filter: "brightness(70%)" }} />
+                  <img src={data.img} alt="" style={{ verticalAlign: "middle", /* filter: "brightness(70%)" */ }} />
                   <div className="content">
                     <h3 style={{ fontWeight: "800",  paddingTop: "2em"}}>{data.name}</h3>
                     <p>{data.description}</p>

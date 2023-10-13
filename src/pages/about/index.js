@@ -14,7 +14,7 @@ export const About = () => {
           paddingTop: "-40px",
         }}
       >
-        <h1 style={{ fontSize: "100px" }}>
+        <h1 style={{ fontSize: "50px" }}>
           Under Construction{" "}
           <img
             src="https://cdn-0.emojis.wiki/emoji-pics/apple/hammer-and-pick-apple.png"
