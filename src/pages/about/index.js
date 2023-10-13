@@ -18,7 +18,7 @@ export const About = () => {
           Under Construction{" "}
           <img
             src="https://cdn-0.emojis.wiki/emoji-pics/apple/hammer-and-pick-apple.png"
-            style={{ height: "100px" }}
+            style={{ height: "70px" }}
             alt="Construction Emoji"
           />
         </h1>
