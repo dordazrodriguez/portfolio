@@ -164,6 +164,15 @@ const dataportfolio = [
         tags: ['Flutter', 'Dart', 'SQL', 'NoSQL'],
     },
     {
+        img: "https://macrosnap.tectgc.com/images/Final/ai_food_scan.png",
+        name: "MacroSnap - AI-Powered Nutrition Tracker",
+        description: "A comprehensive nutrition tracking app that uses AI to analyze food images and estimate macro content. Features include manual macro logging, AI-powered food image analysis, goal setting, data visualization, and premium subscription model with Stripe integration.",
+        link: "https://macrosnap.tectgc.com",
+        year: '2025',
+        categories: ["programming", "Data_Science"],
+        tags: ["Next.js", "TypeScript", "AI", "Firebase", "Stripe", "Tailwind CSS", "Nutrition", "Computer Vision"],
+    },
+    {
         img: "https://picsum.photos/400/800/?grayscale",
         description: "More projects left to add...",
         link: null,
